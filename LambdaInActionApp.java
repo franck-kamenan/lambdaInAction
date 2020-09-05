@@ -13,6 +13,7 @@ public class LambdaInActionApp
         FuncInter1 add = (int x, int y) -> x + y;
 
         System.out.println("Addition: " + operate(6, 3, add));
+        System.out.println("Multiplication: " + operate(6, 3, (x, y) -> x * y));
     }
 
     private static int operate(int number1, int number2, FuncInter1 fObject)
